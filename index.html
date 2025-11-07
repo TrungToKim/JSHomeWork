@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="gallery.css">
-	<script src = "gallery.js"></script>
+  <meta charset="UTF-8">
+  <title>Image Gallery Interaction</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="gallery.js"></script>
 </head>
 <body>
-	
-	<div id = "image">
-		Hover over an image below to display here.
-	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+  <h1>Accessible Image Gallery</h1>
+
+  <div id="image">
+    <img id="largeImage" src="img/red_maple.png" alt="Default large image">
+    <p id="imageText">Default large image</p>
+  </div>
+
+  <div id="thumbnails">
+    <img class="preview" src="img/bacon_in_the_woods.png" alt="A beautiful beach" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" src="img/downed_tree.png" alt="A tall mountain" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" src="img/huron_river_cascades.JPG" alt="A peaceful forest" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" src="img/munising.jpg" alt="A city skyline at night" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" src="img/pink_blossoms.png" alt="A colorful flower" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" src="img/white_buds_on_tree.png" alt="A cute puppy" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+  </div>
 
 </body>
 </html>
